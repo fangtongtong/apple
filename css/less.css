@@ -1,0 +1,84 @@
+/*将其它的less文件迎入本less文件*/
+div {
+  color: red;
+  /*background-color: @color;*/
+  /*width:@width;*/
+  /*height:@width;*/
+  /*box-shadow: 10px 10px 0px red inset;偏移量X轴，Y轴，模糊成都，颜色，内隐隐*/
+}
+/*less中的函数*/
+/*div{
+  .radius(20%);
+  .shadow(0);
+}*/
+.one {
+  border: 10px solid red;
+  border-image-source: url("../border.png");
+  border-image-width: 10px;
+  /*多大的边框显示图片*/
+  border-image-slice: 33.3333%;
+  border-image-repeat: round;
+  border-image-outset: 30px;
+}
+.col-s-1 {
+  width: 200px;
+}
+/*.div{
+    width:200px*@i;
+  }*/
+.col-s-2 {
+  width: 400px;
+}
+/*.div{
+    width:200px*@i;
+  }*/
+.col-s-3 {
+  width: 600px;
+}
+/*.div{
+    width:200px*@i;
+  }*/
+.col-s-4 {
+  width: 800px;
+}
+/*.div{
+    width:200px*@i;
+  }*/
+.col-s-5 {
+  width: 1000px;
+}
+/*.div{
+    width:200px*@i;
+  }*/
+.col-s-6 {
+  width: 1200px;
+}
+/*.div{
+    width:200px*@i;
+  }*/
+.col-s-7 {
+  width: 1400px;
+}
+/*.div{
+    width:200px*@i;
+  }*/
+.col-s-8 {
+  width: 1600px;
+}
+/*.div{
+    width:200px*@i;
+  }*/
+.col-s-9 {
+  width: 1800px;
+}
+/*.div{
+    width:200px*@i;
+  }*/
+div:before,
+div:after {
+  content: "";
+  display: block;
+}
+div:after {
+  clear: both;
+}
